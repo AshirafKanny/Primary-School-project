@@ -19,8 +19,10 @@ const site = {
     activities: ['Football','Choir','Art & Craft','Science Club','Debate']
   },
   testimonials: [
-    {name:'Grace N.', relation:'Parent', quote:'My child has grown so much academically and socially at Hill Top.'},
-    {name:'Peter K.', relation:'Parent', quote:'Supportive teachers and a safe environment.'}
+    {name:'Grace N.', relation:'Parent', quote:'My child has grown so much academically and socially at Hill Top.', photo:'/images/testimonial-1.webp'},
+    {name:'Peter K.', relation:'Parent', quote:'Supportive teachers and a safe environment.', photo:'/images/testimonial-2.jpg'},
+    {name:'Amina S.', relation:'Parent', quote:'The teachers are patient, professional, and always communicate our child\'s progress clearly.', photo:'/images/testimonial-3.jpg'},
+    {name:'Joseph M.', relation:'Guardian', quote:'We have seen great improvement in confidence, reading, and discipline since joining Hill Top.', photo:'/images/testimonial-4.jpg'}
   ],
   gallery: [
     {src:'/images/classroom-blocks.jpeg', alt:'Classroom block'},

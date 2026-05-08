@@ -7,10 +7,14 @@ import { motion, AnimatePresence } from 'framer-motion'
 export function Navbar(){
   const [open,setOpen] = useState(false)
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-40">
+    <header className="fixed top-0 inset-x-0 bg-white/95 backdrop-blur shadow-sm z-50 border-b border-gray-100">
       <div className="container-wide flex items-center justify-between h-16">
         <Link href="/" className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-md bg-primary flex items-center justify-center text-white font-bold">HT</div>
+          <img
+            src="/images/logo/HTbadge.webp"
+            alt="Hill Top Primary School logo"
+            className="h-11 w-auto object-contain shrink-0"
+          />
           <div>
             <div className="font-semibold">Hill Top Primary</div>
             <div className="text-xs text-gray-500">Building Bright Futures</div>

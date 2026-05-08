@@ -1,6 +1,7 @@
 "use client"
 
 import { useState } from 'react'
+import { motion } from 'framer-motion'
 
 export function ContactForm(){
   const [form, setForm] = useState({name:'',email:'',phone:'',message:''})
@@ -17,12 +18,12 @@ export function ContactForm(){
   }
 
   return (
-    <form className="grid grid-cols-1 gap-3" onSubmit={handleSubmit}>
-      <input name="name" value={form.name} onChange={handleChange} className="border p-2 rounded" placeholder="Your name" />
-      <input name="email" value={form.email} onChange={handleChange} className="border p-2 rounded" placeholder="Email" />
-      <input name="phone" value={form.phone} onChange={handleChange} className="border p-2 rounded" placeholder="Phone" />
-      <textarea name="message" value={form.message} onChange={handleChange} className="border p-2 rounded" placeholder="Message" rows={4} />
-      <button type="submit" className="bg-primary text-white px-4 py-2 rounded">Send Message</button>
-    </form>
+    <motion.form className="grid grid-cols-1 gap-3" onSubmit={handleSubmit} initial={{ opacity: 0, y: 12 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, amount: 0.3 }} transition={{ duration: 0.55 }}>
+      <motion.input whileFocus={{ scale: 1.01 }} name="name" value={form.name} onChange={handleChange} className="border p-2 rounded" placeholder="Your name" />
+      <motion.input whileFocus={{ scale: 1.01 }} name="email" value={form.email} onChange={handleChange} className="border p-2 rounded" placeholder="Email" />
+      <motion.input whileFocus={{ scale: 1.01 }} name="phone" value={form.phone} onChange={handleChange} className="border p-2 rounded" placeholder="Phone" />
+      <motion.textarea whileFocus={{ scale: 1.01 }} name="message" value={form.message} onChange={handleChange} className="border p-2 rounded" placeholder="Message" rows={4} />
+      <motion.button whileHover={{ y: -2 }} whileTap={{ scale: 0.98 }} type="submit" className="bg-primary text-white px-4 py-2 rounded">Send Message</motion.button>
+    </motion.form>
   )
 }

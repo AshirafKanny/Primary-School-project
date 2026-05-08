@@ -8,7 +8,7 @@ export function AcademicsPreview(){
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
       {sections.map(s => (
-        <div key={s.title} className="card">
+        <div key={s.title} className="card bg-[#dff5e3] border border-green-200">
           <div className="font-semibold">{s.title}</div>
           <p className="text-gray-600 mt-2">{s.desc}</p>
         </div>

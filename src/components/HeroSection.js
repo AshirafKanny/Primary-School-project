@@ -2,28 +2,39 @@
 
 import Link from 'next/link'
 import { motion } from 'framer-motion'
+import { pageFade } from './motion'
 
 export function HeroSection(){
   return (
-    <motion.section className="relative" initial={{opacity:0}} animate={{opacity:1}} transition={{duration:0.6}}>
+    <motion.section className="relative overflow-hidden" variants={pageFade} initial="hidden" animate="show">
       <div className="relative h-72 md:h-96 flex items-center">
         <div
-          className="absolute inset-0 bg-cover bg-center"
+          className="absolute inset-0 bg-cover bg-center scale-105"
           style={{
             backgroundImage:
               'url("https://plus.unsplash.com/premium_photo-1690479510860-b5cde6fd96a2?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Nob29sJTIwZ2F0ZXxlbnwwfHwwfHx8MA%3D%3D")'
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/85 via-primary/60 to-transparent" />
+        <motion.div
+          className="absolute inset-0 bg-linear-to-r from-primary/90 via-primary/65 to-transparent"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        />
         <div className="relative z-10 container-wide">
-          <div className="max-w-3xl text-white">
-            <h1 className="text-3xl md:text-5xl font-bold">Hill Top Primary School</h1>
-            <p className="mt-3 text-lg md:text-xl">Building Bright Futures</p>
-            <div className="mt-6 flex gap-3">
-              <Link href="/about" className="bg-gold text-charcoal px-4 py-2 rounded-md font-semibold">About Us</Link>
-              <Link href="/contact" className="bg-white/90 text-primary px-4 py-2 rounded-md">Contact</Link>
-            </div>
-          </div>
+          <motion.div
+            className="max-w-3xl text-white"
+            initial={{ opacity: 0, y: 18 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15, duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+          >
+            <motion.h1 className="text-3xl md:text-5xl font-bold" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.25, duration: 0.6 }}>Hill Top Primary School</motion.h1>
+            <motion.p className="mt-3 text-lg md:text-xl" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.35, duration: 0.6 }}>Building Bright Futures</motion.p>
+            <motion.div className="mt-6 flex gap-3" initial={{ opacity: 0, y: 12 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.45, duration: 0.6 }}>
+              <Link href="/about" className="bg-gold text-charcoal px-4 py-2 rounded-md font-semibold transition-transform duration-300 hover:-translate-y-0.5">About Us</Link>
+              <Link href="/contact" className="bg-white/90 text-primary px-4 py-2 rounded-md transition-transform duration-300 hover:-translate-y-0.5">Contact</Link>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </motion.section>
