@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import data from '../../data/site'
 import { SectionTitle } from '../../components/SectionTitle'
 
@@ -59,19 +58,15 @@ export default function About(){
         </div>
 
         <aside className="rounded-2xl overflow-hidden border border-gray-200 shadow-sm bg-white">
-          <Image
+          <img
             src="/images/logo/HT%20hilltop.jpeg"
             alt="Hill Top school identity"
-            width={1200}
-            height={1400}
             className="w-full h-140 object-cover"
           />
           <div className="border-t border-gray-200">
-            <Image
+            <img
               src="https://images.unsplash.com/photo-1640000225364-bc542dfe8c66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByaW1hcnklMjBzY2hvb2wlMjBjb21wb3VuZHxlbnwwfHwwfHx8MA%3D%3D"
               alt="Primary school compound"
-              width={1200}
-              height={800}
               className="w-full h-72 object-cover"
             />
           </div>
