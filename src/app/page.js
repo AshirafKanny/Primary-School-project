@@ -22,9 +22,18 @@ export default function Home(){
         <p className="max-w-3xl text-lg text-gray-700 mt-4">{data.site.intro}</p>
       </section>
 
-      <section className="bg-gray-50 py-12">
-        <div className="container-wide">
-          <SectionTitle title="Why Choose Hill Top" subtitle="What sets us apart" />
+      <section
+        className="relative py-16 md:py-20 bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/images/why-choose-bg.jpg")'
+        }}
+      >
+        <div className="absolute inset-0 bg-black/30" />
+        <div className="container-wide relative z-10">
+          <div className="mb-6 md:mb-8 text-white drop-shadow-sm">
+            <h2 className="text-2xl md:text-3xl font-semibold">Why Choose Hill Top</h2>
+            <p className="mt-1 text-white/90">What sets us apart</p>
+          </div>
           <WhyChoose />
         </div>
       </section>

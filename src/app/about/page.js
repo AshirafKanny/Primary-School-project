@@ -1,5 +1,7 @@
+import Image from 'next/image'
 import data from '../../data/site'
 import { SectionTitle } from '../../components/SectionTitle'
+import { StaffCards } from '../../components/StaffCards'
 
 export const metadata = {
   title: 'About — Hill Top Primary School',
@@ -24,19 +26,19 @@ export default function About(){
 
         <aside className="card">
           <h4 className="font-semibold">Headteacher's Message</h4>
-        <div className="mt-8">
-          <SectionTitle title="Our Staff" subtitle="Experienced and caring teachers" />
-          <StaffCards items={data.staff} />
-        </div>
-
-        <div className="mt-8">
-          <SectionTitle title="School Environment" subtitle="Safe, clean learning spaces" />
-          <div className="mt-3 rounded overflow-hidden">
-            <Image src="/images/gallery6.jpg" alt="School building" width={1200} height={600} className="w-full h-auto object-cover rounded" />
-          </div>
-        </div>
-
           <p className="mt-2 text-gray-700">{data.site.headteacherMessage}</p>
+
+          <div className="mt-8">
+            <SectionTitle title="Our Staff" subtitle="Experienced and caring teachers" />
+            <StaffCards items={data.staff} />
+          </div>
+
+          <div className="mt-8">
+            <SectionTitle title="School Environment" subtitle="Safe, clean learning spaces" />
+            <div className="mt-3 rounded overflow-hidden">
+              <Image src="/images/main-enterance.jpeg" alt="School entrance" width={1200} height={600} className="w-full h-auto object-cover rounded" />
+            </div>
+          </div>
         </aside>
       </div>
 

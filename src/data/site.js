@@ -23,18 +23,18 @@ const site = {
     {name:'Peter K.', relation:'Parent', quote:'Supportive teachers and a safe environment.'}
   ],
   gallery: [
-    {src:'/images/gallery1.jpg', alt:'Pupils in class'},
-    {src:'/images/gallery2.jpg', alt:'Sports day'},
-    {src:'/images/gallery3.jpg', alt:'Music and dance'},
-    {src:'/images/gallery4.jpg', alt:'Playtime'},
-    {src:'/images/gallery5.jpg', alt:'Science activity'},
-    {src:'/images/gallery6.jpg', alt:'School building'}
+    {src:'/images/classroom-blocks.jpeg', alt:'Classroom block'},
+    {src:'/images/students-image.jpeg', alt:'Students learning'},
+    {src:'/images/dining-hall.jpeg', alt:'Dining hall'},
+    {src:'/images/class-teachers.jpeg', alt:'Teachers and staff'},
+    {src:'/images/main-enterance.jpeg', alt:'Main entrance'},
+    {src:'/images/staff-image.jpeg', alt:'Staff members'}
   ],
   staff: [
-    {name:'Alice Namutebi', role:'Headteacher', photo:'/images/staff1.jpg'},
-    {name:'Samuel O.', role:'Class Teacher', photo:'/images/staff2.jpg'},
-    {name:'Jane K.', role:'Nursery Lead', photo:'/images/staff3.jpg'},
-    {name:'Peter L.', role:'Sports Coach', photo:'/images/staff4.jpg'}
+    {name:'Alice Namutebi', role:'Headteacher', photo:'/images/staff-image.jpeg'},
+    {name:'Samuel O.', role:'Class Teacher', photo:'/images/class-teachers.jpeg'},
+    {name:'Jane K.', role:'Nursery Lead', photo:'/images/students-image.jpeg'},
+    {name:'Peter L.', role:'Sports Coach', photo:'/images/classroom-blocks.jpeg'}
   ],
   announcements: [
     {id:1, title:'Term starts on June 1st', date:'2026-05-01'}

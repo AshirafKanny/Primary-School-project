@@ -14,7 +14,7 @@ export function WhyChoose(){
   return (
     <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mt-6">
       {items.map((it, i)=> (
-        <motion.div key={it.title} className="card" initial={{opacity:0, y:8}} animate={{opacity:1, y:0}} transition={{delay: i*0.08}}>
+        <motion.div key={it.title} className="card bg-white/85 backdrop-blur-sm border border-white/40" initial={{opacity:0, y:8}} animate={{opacity:1, y:0}} transition={{delay: i*0.08}}>
           <div className="flex items-center gap-3">
             <div className="p-3 bg-primary/10 rounded">
               <it.icon className="text-primary" />
