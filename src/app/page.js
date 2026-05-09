@@ -1,5 +1,8 @@
-import Image from 'next/image'
-import { HeroSection } from '../components/HeroSection'
+import { HeroCarousel } from '../components/HeroCarousel'
+import { AboutSection } from '../components/AboutSection'
+import { ProgramsSection } from '../components/ProgramsSection'
+import { ProgramsCardsSection } from '../components/ProgramsCardsSection'
+import { FeaturesSection } from '../components/FeaturesSection'
 import { SectionTitle } from '../components/SectionTitle'
 import { WhyChoose } from '../components/WhyChoose'
 import { AcademicsPreview } from '../components/AcademicsPreview'
@@ -16,11 +19,10 @@ export const metadata = {
 export default function Home(){
   return (
     <div>
-      <HeroSection />
-      <section className="container-wide py-12">
-        <SectionTitle title="Welcome" subtitle="A place where every child matters" />
-        <p className="max-w-3xl text-lg text-gray-700 mt-4">{data.site.intro}</p>
-      </section>
+      <HeroCarousel />
+      <AboutSection />
+      <ProgramsSection />
+      <ProgramsCardsSection />
 
       <section
         className="relative py-16 md:py-20 bg-cover bg-center"
@@ -31,12 +33,14 @@ export default function Home(){
         <div className="absolute inset-0 bg-black/30" />
         <div className="container-wide relative z-10">
           <div className="mb-6 md:mb-8 text-white drop-shadow-sm">
-            <h2 className="text-2xl md:text-3xl font-semibold">Why Choose Hill Top</h2>
-            <p className="mt-1 text-white/90">What sets us apart</p>
+            <h2 className="text-2xl md:text-3xl font-semibold text-center">Why Choose Hill Top</h2>
+            <p className="mt-1 text-white/90 text-center">What sets us apart</p>
           </div>
           <WhyChoose />
         </div>
       </section>
+
+      <FeaturesSection />
 
       <section className="container-wide py-12">
         <SectionTitle title="Academics" subtitle="A balanced curriculum for early learners" />

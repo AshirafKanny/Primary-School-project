@@ -63,7 +63,7 @@ export default function About(){
             alt="Hill Top school identity"
             className="w-full h-140 object-cover"
           />
-          <div className="border-t border-gray-200">
+          <div className="border-t border-gray-200 mt-4">
             <img
               src="https://images.unsplash.com/photo-1640000225364-bc542dfe8c66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByaW1hcnklMjBzY2hvb2wlMjBjb21wb3VuZHxlbnwwfHwwfHx8MA%3D%3D"
               alt="Primary school compound"
