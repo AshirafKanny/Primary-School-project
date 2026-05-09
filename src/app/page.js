@@ -3,6 +3,7 @@ import { AboutSection } from '../components/AboutSection'
 import { ProgramsSection } from '../components/ProgramsSection'
 import { ProgramsCardsSection } from '../components/ProgramsCardsSection'
 import { FeaturesSection } from '../components/FeaturesSection'
+import { LatestNewsSection } from '../components/LatestNewsSection'
 import { SectionTitle } from '../components/SectionTitle'
 import { WhyChoose } from '../components/WhyChoose'
 import { AcademicsPreview } from '../components/AcademicsPreview'
@@ -33,7 +34,7 @@ export default function Home(){
         <div className="absolute inset-0 bg-black/30" />
         <div className="container-wide relative z-10">
           <div className="mb-6 md:mb-8 text-white drop-shadow-sm">
-            <h2 className="text-2xl md:text-3xl font-semibold text-center">Why Choose Hill Top</h2>
+            <h2 className="text-4xl md:text-6xl font-bold text-center">Why Choose Hill Top</h2>
             <p className="mt-1 text-white/90 text-center">What sets us apart</p>
           </div>
           <WhyChoose />
@@ -42,14 +43,16 @@ export default function Home(){
 
       <FeaturesSection />
 
+      <LatestNewsSection />
+
       <section className="container-wide py-12">
         <SectionTitle title="Academics" subtitle="A balanced curriculum for early learners" />
         <AcademicsPreview />
       </section>
 
-      <section className="bg-white py-12">
+      <section className="bg-slate-900 py-12">
         <div className="container-wide">
-          <SectionTitle title="Gallery" subtitle="Moments from school life" />
+          <SectionTitle title="Gallery" subtitle="Moments from school life" center fontSize="text-4xl md:text-5xl" titleColor="text-white" subtitleColor="text-white/80" />
           <GalleryGrid items={data.gallery.slice(0,6)} />
         </div>
       </section>

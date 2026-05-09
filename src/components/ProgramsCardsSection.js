@@ -4,19 +4,19 @@ import { motion } from 'framer-motion'
 
 const programs = [
   {
-    image: 'https://ld-wt73.template-help.com/wt_61183/images/home-02-370x240.jpg',
+    image: 'https://images.unsplash.com/photo-1753892208880-7032f44ad6ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGFmcmljYW4lMjBlZHVjYXRpb24lMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D',
     date: 'June 3, 2022',
     title: 'Arts Programs',
     author: 'Charles Banks'
   },
   {
-    image: 'https://ld-wt73.template-help.com/wt_61183/images/home-03-370x240.jpg',
+    image: 'https://images.unsplash.com/photo-1637148734636-906c24feeb55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzJ8fGFmcmljYW4lMjBlZHVjYXRpb24lMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D',
     date: 'June 3, 2022',
     title: 'Foreign Language Programs',
     author: 'Maria Howard'
   },
   {
-    image: 'https://ld-wt73.template-help.com/wt_61183/images/home-04-370x240.jpg',
+    image: 'https://images.unsplash.com/photo-1695131497489-507c8dda28a5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGFmcmljYW4lMjBlZHVjYXRpb24lMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D',
     date: 'June 3, 2022',
     title: 'Sports Programs',
     author: 'Steven Carter'
