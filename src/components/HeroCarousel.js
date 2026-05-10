@@ -51,7 +51,7 @@ export function HeroCarousel(){
 
   return (
     <section className="relative w-full overflow-hidden bg-linear-to-r from-blue-50 to-cyan-50">
-      <div className="h-screen flex items-center">
+      <div className="h-[calc(100vh-64px)] flex items-center">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}

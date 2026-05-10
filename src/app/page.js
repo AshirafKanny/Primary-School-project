@@ -45,11 +45,6 @@ export default function Home(){
 
       <LatestNewsSection />
 
-      <section className="container-wide py-12">
-        <SectionTitle title="Academics" subtitle="A balanced curriculum for early learners" />
-        <AcademicsPreview />
-      </section>
-
       <section className="bg-slate-900 py-12">
         <div className="container-wide">
           <SectionTitle title="Gallery" subtitle="Moments from school life" center fontSize="text-4xl md:text-5xl" titleColor="text-white" subtitleColor="text-white/80" />
@@ -57,14 +52,26 @@ export default function Home(){
         </div>
       </section>
 
-      <section className="bg-gray-50 py-12">
+      <section className="bg-slate-900 py-12">
         <div className="container-wide">
-          <SectionTitle title="Testimonials" subtitle="Parents share their experience" />
+          <SectionTitle title="Testimonials" subtitle="Parents share their experience" center fontSize="text-4xl md:text-5xl" titleColor="text-white" subtitleColor="text-white/80" />
           <Testimonials items={data.testimonials} />
         </div>
       </section>
 
       <CTASection />
+        {/* Google Maps Section */}
+        <section className="w-full">
+          <iframe
+            width="100%"
+            height="400"
+            style={{ border: 0, display: 'block' }}
+            loading="lazy"
+            allowFullScreen=""
+            referrerPolicy="no-referrer-when-downgrade"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.788354848317!2d32.58253!3d0.34756!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dba8c1d1d1d1d%3A0x1d1d1d1d1d1d1d1d!2sKampala%2C%20Uganda!5e0!3m2!1sen!2s!4v1620000000000"
+          ></iframe>
+        </section>
     </div>
   )
 }
