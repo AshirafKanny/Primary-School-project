@@ -29,7 +29,7 @@ export function AboutSection() {
           {/* Image with Play Button */}
           <motion.div variants={itemVariants} className="relative group">
             <img
-              src="https://ld-wt73.template-help.com/wt_61183/images/home-01-620-350.jpg"
+              src="https://images.unsplash.com/photo-1681745206981-c027f0dc2575?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTE1fHxhZnJpY2FuJTIwZWR1Y2F0aW9uJTIwaW1hZ2VzfGVufDB8fDB8fHww"
               alt="About Our Center"
               className="w-full h-auto rounded-lg shadow-lg"
             />
