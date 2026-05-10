@@ -40,11 +40,11 @@ export function Navbar(){
       {open && (
         <motion.div initial={{height:0,opacity:0}} animate={{height:'auto',opacity:1}} exit={{height:0,opacity:0}} className="md:hidden bg-white border-t overflow-hidden">
           <div className="container-wide py-4 flex flex-col gap-3">
-            <Link href="/" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">Home</Link>
-            <Link href="/about" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">About</Link>
-            <Link href="/academics" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">Academics</Link>
-            <Link href="/gallery" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">Gallery</Link>
-            <Link href="/contact" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">Contact</Link>
+            <Link href="/" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0" onClick={()=>setOpen(false)}>Home</Link>
+            <Link href="/about" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0" onClick={()=>setOpen(false)}>About</Link>
+            <Link href="/academics" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0" onClick={()=>setOpen(false)}>Academics</Link>
+            <Link href="/gallery" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0" onClick={()=>setOpen(false)}>Gallery</Link>
+            <Link href="/contact" className="focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0" onClick={()=>setOpen(false)}>Contact</Link>
           </div>
         </motion.div>
       )}

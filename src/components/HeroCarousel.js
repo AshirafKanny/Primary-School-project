@@ -64,11 +64,11 @@ export function HeroCarousel(){
           >
             <div className="h-full w-full grid grid-cols-1 md:grid-cols-2 gap-8 items-center px-6 md:px-12">
               {/* Image */}
-              <div className="hidden md:flex h-full items-center justify-center">
+              <div className="flex h-full items-center justify-center order-last md:order-none">
                 <img
                   src={slides[current].image}
                   alt={slides[current].heading}
-                  className="w-full h-128 max-w-4xl object-contain"
+                  className="w-full max-w-md md:max-w-4xl h-56 md:h-128 object-contain"
                 />
               </div>
 
