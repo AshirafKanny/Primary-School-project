@@ -8,8 +8,15 @@ export function HeroSection(){
   return (
     <motion.section className="relative overflow-hidden" variants={pageFade} initial="hidden" animate="show">
       <div className="relative h-72 md:h-96 flex items-center">
+        {/* Mobile image: visible on mobile, hidden on md+ */}
+        <img
+          src="https://plus.unsplash.com/premium_photo-1690479510860-b5cde6fd96a2?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Nob29sJTIwZ2F0ZXxlbnwwfHwwfHx8MA%3D%3D"
+          alt="School gate hero"
+          className="absolute inset-0 w-full h-full object-cover scale-105 md:hidden"
+        />
+        {/* Desktop background image: hidden on mobile, visible on md+ */}
         <div
-          className="absolute inset-0 bg-cover bg-center scale-105"
+          className="absolute inset-0 bg-cover bg-center scale-105 hidden md:block"
           style={{
             backgroundImage:
               'url("https://plus.unsplash.com/premium_photo-1690479510860-b5cde6fd96a2?w=1600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8c2Nob29sJTIwZ2F0ZXxlbnwwfHwwfHx8MA%3D%3D")'
