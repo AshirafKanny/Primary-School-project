@@ -1,12 +1,12 @@
 const site = {
   site: {
-    name: 'Hill Top Primary School',
-    description: 'Hill Top Primary School — Building Bright Futures. Quality primary education in a caring environment.',
-    intro: 'Hill Top Primary School provides a nurturing environment that supports academic achievement and wholesome development for every child.',
-    history: 'Founded in the early 2000s, Hill Top Primary School has grown from a small community school into a well-respected institution committed to excellence.',
+    name: 'HILL TOP ACADEMY',
+    description: 'HILL TOP ACADEMY — Building Bright Futures. Quality primary education in a caring environment.',
+    intro: 'HILL TOP ACADEMY provides a nurturing environment that supports academic achievement and wholesome development for every child.',
+    history: 'Founded in the early 2000s, HILL TOP ACADEMY has grown from a small community school into a well-respected institution committed to excellence.',
     mission: 'To provide quality education, strong moral values, creativity, discipline, and holistic development that prepares children for a successful future.',
     vision: 'To become a leading primary school known for academic excellence, innovation, discipline, and nurturing responsible future leaders.',
-    headteacherMessage: 'Welcome to Hill Top Primary School. We are committed to supporting each child’s potential through excellent teaching and caring guidance.',
+    headteacherMessage: 'Welcome to HILL TOP ACADEMY. We are committed to supporting each child’s potential through excellent teaching and caring guidance.',
     academicsIntro: 'Our curriculum balances core subjects with creative and physical activities to build confident learners.'
   },
   contact: {
@@ -19,10 +19,10 @@ const site = {
     activities: ['Football','Choir','Art & Craft','Science Club','Debate']
   },
   testimonials: [
-    {name:'Grace N.', relation:'Parent', quote:'My child has grown so much academically and socially at Hill Top.', photo:'/images/testimonial-1.webp'},
+    {name:'Grace N.', relation:'Parent', quote:'My child has grown so much academically and socially at HILL TOP ACADEMY.', photo:'/images/testimonial-1.webp'},
     {name:'Peter K.', relation:'Parent', quote:'Supportive teachers and a safe environment.', photo:'/images/testimonial-2.jpg'},
     {name:'Amina S.', relation:'Parent', quote:'The teachers are patient, professional, and always communicate our child\'s progress clearly.', photo:'/images/testimonial-3.jpg'},
-    {name:'Joseph M.', relation:'Guardian', quote:'We have seen great improvement in confidence, reading, and discipline since joining Hill Top.', photo:'/images/testimonial-4.jpg'}
+    {name:'Joseph M.', relation:'Guardian', quote:'We have seen great improvement in confidence, reading, and discipline since joining HILL TOP ACADEMY.', photo:'/images/testimonial-4.jpg'}
   ],
   gallery: [
     {src:'/images/classroom-blocks.jpeg', alt:'Classroom block'},

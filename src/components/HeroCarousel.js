@@ -9,13 +9,13 @@ export function HeroCarousel(){
       id: 1,
       image: '/images/logo/st2.png',
       heading: 'Play, Explore and Learn.',
-      description: 'Programs of Hill Top Primary School include world-class curriculum and knowledgeable child development professionals that meet the needs of children at every age and stage.'
+      description: 'Programs of HILL TOP ACADEMY include world-class curriculum and knowledgeable child development professionals that meet the needs of children at every age and stage.'
     },
     {
       id: 2,
       image: '/images/logo/st3.png',
       heading: 'We Offer Different Kinds of Activities.',
-      description: 'With us, your kid will enjoy plenty of different activities that will develop them and act as a perfect ground for further development. Explore the bright future of your child at Hill Top Primary!'
+      description: 'With us, your kid will enjoy plenty of different activities that will develop them and act as a perfect ground for further development. Explore the bright future of your child at HILL TOP ACADEMY!'
     },
     {
       id: 3,

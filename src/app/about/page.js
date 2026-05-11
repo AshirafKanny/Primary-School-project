@@ -40,7 +40,7 @@ export default function About(){
         <div className="absolute inset-0 bg-black/40" />
         <div className="container-wide relative z-10 text-white">
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }} className="mb-6 md:mb-8">
-            <h1 className="text-4xl md:text-6xl font-bold text-center">About Hill Top</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-center">About HILL TOP ACADEMY</h1>
             <p className="mt-2 text-center text-white/90 text-lg">Excellence, Community & Care</p>
           </motion.div>
         </div>
@@ -63,7 +63,7 @@ export default function About(){
           </motion.div>
 
           <motion.div variants={cardRise} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="rounded-2xl overflow-hidden shadow-lg">
-            <img src="/images/logo/HT%20hilltop.jpeg" alt="Hill Top school identity" className="w-full h-80 object-cover" />
+            <img src="/images/logo/HT%20hilltop.jpeg" alt="HILL TOP ACADEMY identity" className="w-full h-80 object-cover" />
             <img src="https://images.unsplash.com/photo-1640000225364-bc542dfe8c66?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fHByaW1hcnklMjBzY2hvb2wlMjBjb21wb3VuZHxlbnwwfHwwfHx8MA%3D%3D" alt="Primary school compound" className="w-full h-80 object-cover" />
           </motion.div>
         </div>
@@ -75,7 +75,7 @@ export default function About(){
           <motion.div variants={cardRise} initial="hidden" whileInView="show" viewport={{ once: true, amount: 0.7 }} className="bg-white rounded-xl p-8 md:p-10 border-l-4 border-cyan-400 shadow-md">
             <h3 className="text-2xl font-bold text-primary">Headteacher's Message</h3>
             <p className="mt-6 text-gray-700 leading-8">
-              Welcome to Hill Top Primary School, where every child is known, valued, and guided to discover their full potential. As Headteacher, I am proud of our dedicated team and the caring learning culture we have built together with families and the community. Our goal is not only strong academic performance, but also confidence, character, and curiosity. We believe children learn best when they feel safe, respected, and inspired, and this is why we combine structured classroom teaching with creative activities, teamwork, and practical learning moments. At Hill Top, we focus on literacy, numeracy, communication skills, and critical thinking while also nurturing discipline, empathy, and responsibility. We work closely with parents to monitor progress, support individual needs, and celebrate every milestone, big or small. Our teachers are committed to continuous improvement so that your child receives high-quality instruction in a positive and engaging environment. We also place great value on co-curricular experiences because music, sport, art, and leadership opportunities help shape balanced young learners. Thank you for trusting us with your child. We remain committed to excellence, partnership, and a future where every learner leaves Hill Top prepared to thrive in secondary school and in life.
+              Welcome to HILL TOP ACADEMY, where every child is known, valued, and guided to discover their full potential. As Headteacher, I am proud of our dedicated team and the caring learning culture we have built together with families and the community. Our goal is not only strong academic performance, but also confidence, character, and curiosity. We believe children learn best when they feel safe, respected, and inspired, and this is why we combine structured classroom teaching with creative activities, teamwork, and practical learning moments. At HILL TOP ACADEMY, we focus on literacy, numeracy, communication skills, and critical thinking while also nurturing discipline, empathy, and responsibility. We work closely with parents to monitor progress, support individual needs, and celebrate every milestone, big or small. Our teachers are committed to continuous improvement so that your child receives high-quality instruction in a positive and engaging environment. We also place great value on co-curricular experiences because music, sport, art, and leadership opportunities help shape balanced young learners. Thank you for trusting us with your child. We remain committed to excellence, partnership, and a future where every learner leaves HILL TOP ACADEMY prepared to thrive in secondary school and in life.
             </p>
           </motion.div>
         </div>

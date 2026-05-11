@@ -4,8 +4,8 @@ import { Navbar } from '../components/Navbar'
 import { FloatingWhatsAppButton } from '../components/FloatingWhatsAppButton'
 
 export const metadata = {
-  title: 'Hill Top Primary School',
-  description: 'Hill Top Primary School — Building Bright Futures. Quality primary education in a caring environment.'
+  title: 'HILL TOP ACADEMY',
+  description: 'HILL TOP ACADEMY — Building Bright Futures. Quality primary education in a caring environment.'
 }
 
 export default function RootLayout({ children }){

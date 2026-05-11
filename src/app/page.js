@@ -13,7 +13,7 @@ import { CTASection } from '../components/CTASection'
 import data from '../data/site'
 
 export const metadata = {
-  title: 'Hill Top Primary School — Home',
+  title: 'HILL TOP ACADEMY — Home',
   description: data.site.description
 }
 
@@ -34,7 +34,7 @@ export default function Home(){
         <div className="absolute inset-0 bg-black/30" />
         <div className="container-wide relative z-10">
           <div className="mb-6 md:mb-8 text-white drop-shadow-sm">
-            <h2 className="text-4xl md:text-6xl font-bold text-center">Why Choose Hill Top</h2>
+            <h2 className="text-4xl md:text-6xl font-bold text-center">Why Choose HILL TOP ACADEMY</h2>
             <p className="mt-1 text-white/90 text-center">What sets us apart</p>
           </div>
           <WhyChoose />

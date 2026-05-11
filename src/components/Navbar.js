@@ -12,11 +12,11 @@ export function Navbar(){
         <Link href="/" className="flex items-center gap-3 focus:outline-none focus-visible:ring-0 focus-visible:ring-offset-0">
           <img
             src="/images/logo/HTbadge.webp"
-            alt="Hill Top Primary School logo"
+            alt="HILL TOP ACADEMY logo"
             className="h-11 w-auto object-contain shrink-0"
           />
           <div>
-            <div className="font-semibold">Hill Top Primary</div>
+            <div className="font-semibold">HILL TOP ACADEMY</div>
             <div className="text-xs text-gray-500">Building Bright Futures</div>
           </div>
         </Link>
