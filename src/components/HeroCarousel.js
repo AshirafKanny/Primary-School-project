@@ -51,7 +51,7 @@ export function HeroCarousel(){
 
   return (
     <section className="relative w-full overflow-hidden bg-linear-to-r from-blue-50 to-cyan-50">
-      <div className="h-[calc(100vh-64px)] flex items-center">
+      <div className="min-h-[calc(100vh-64px)] md:h-[calc(100vh-64px)] flex items-center py-10 md:py-0">
         <AnimatePresence mode="wait">
           <motion.div
             key={current}
@@ -68,7 +68,7 @@ export function HeroCarousel(){
                 <img
                   src={slides[current].image}
                   alt={slides[current].heading}
-                  className="w-full max-w-md md:max-w-4xl h-56 md:h-128 object-contain"
+                  className="w-full max-w-sm md:max-w-2xl lg:max-w-3xl h-64 md:h-[26rem] lg:h-[30rem] object-contain"
                 />
               </div>
 
